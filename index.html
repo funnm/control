@@ -60,27 +60,27 @@
     <!-- TERMINAL OPERATIVA -->
     <div id="app-container" class="hidden opacity-0 transition-opacity duration-500 flex flex-col h-screen">
         <header class="header-main sticky top-0 z-50 border-b border-var-border bg-var-card-header/80 backdrop-blur-md">
-            <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-                <div class="flex items-center gap-4">
+            <div class="container mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+                <div class="flex items-center gap-2 md:gap-4">
                     <div class="flex items-center gap-2">
                         <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                         <h1 class="text-sm font-bold tracking-tight">ELZUCO<span class="text-blue-500">_VAULT</span></h1>
                     </div>
-                    <div class="h-4 w-px bg-slate-700"></div>
-                    <p id="user-display" class="font-mono text-xs text-slate-400 truncate max-w-[200px]"></p>
+                    <div class="h-4 w-px bg-slate-700 hidden sm:block"></div>
+                    <p id="user-display" class="font-mono text-xs text-slate-400 truncate max-w-[100px] md:max-w-[200px] hidden sm:block"></p>
                     
                     <!-- Navigation Links -->
-                    <div class="flex gap-4 ml-4">
-                        <a href="https://funnm.github.io/taller/" class="text-[10px] font-mono text-slate-400 hover:text-blue-400 uppercase tracking-widest transition-colors">
-                            <i class="fas fa-tools mr-1"></i> Taller
+                    <div class="flex gap-3 md:gap-4 ml-2 md:ml-4">
+                        <a href="https://funnm.github.io/taller/" class="text-[10px] font-mono text-slate-400 hover:text-blue-400 uppercase tracking-widest transition-colors flex items-center">
+                            <i class="fas fa-tools md:mr-1"></i> <span class="hidden md:inline">Taller</span>
                         </a>
-                        <a href="https://funnm.github.io/Inventario-tv/" class="text-[10px] font-mono text-slate-400 hover:text-blue-400 uppercase tracking-widest transition-colors">
-                            <i class="fas fa-tv mr-1"></i> Inventario TV
+                        <a href="https://funnm.github.io/Inventario-tv/" class="text-[10px] font-mono text-slate-400 hover:text-blue-400 uppercase tracking-widest transition-colors flex items-center">
+                            <i class="fas fa-tv md:mr-1"></i> <span class="hidden md:inline">Inventario TV</span>
                         </a>
                     </div>
                 </div>
 
-                <div class="flex items-center gap-3 text-xs font-mono">
+                <div class="flex items-center gap-2 md:gap-3 text-xs font-mono">
                     <span class="text-green-500 border border-green-500/30 bg-green-500/10 px-2 py-1 rounded hidden md:inline-block">
                         <i class="fas fa-lock text-[10px] mr-1"></i>Protegido
                     </span>

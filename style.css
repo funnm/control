@@ -131,3 +131,45 @@
  .animate-scan {
      animation: scanner 2.5s infinite linear;
  }
+
+ /* --- Mobile Optimizations --- */
+ .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+ @media (max-width: 768px) {
+     .container {
+         padding-left: 1rem;
+         padding-right: 1rem;
+     }
+     
+     .metric-card {
+         padding: 1rem;
+     }
+     
+     .metric-card p.text-2xl {
+         font-size: 1.25rem;
+     }
+     
+     .tech-card {
+         border-radius: 0.75rem;
+     }
+     
+     header h1 {
+         font-size: 0.75rem;
+     }
+
+     .input-field-sm {
+         padding: 0.5rem;
+         font-size: 0.75rem;
+     }
+
+     table th, table td {
+         padding: 0.5rem !important;
+         font-size: 0.7rem;
+     }
+ }
